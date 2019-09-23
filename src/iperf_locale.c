@@ -318,13 +318,13 @@ const char report_bw_header_bidir[] =
 "[ ID][Role] Interval           Transfer     Bitrate\n";
 
 const char report_bw_retrans_header[] =
-"[ ID] Interval           Transfer     Bitrate         Retr\n";
+"[ ID] Interval           Transfer     Bitrate      Retr min max average\n";
 
 const char report_bw_retrans_header_bidir[] =
-"[ ID][Role] Interval           Transfer     Bitrate         Retr\n";
+"[ ID][Role] Interval           Transfer     Bitrate     Retr min max average\n";
 
 const char report_bw_retrans_cwnd_header[] =
-"[ ID] Interval           Transfer     Bitrate         Retr  Cwnd\n";
+"[ ID] Interval           Transfer     Bitrate         Retr Cwnd RTT\n";
 
 const char report_bw_retrans_cwnd_header_bidir[] =
 "[ ID][Role] Interval           Transfer     Bitrate         Retr  Cwnd\n";
@@ -345,10 +345,10 @@ const char report_bw_format[] =
 "[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec                  %s\n";
 
 const char report_bw_retrans_format[] =
-"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %3u             %s\n";
+"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %3u %d us %d us %d us            %s\n";
 
 const char report_bw_retrans_cwnd_format[] =
-"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %3u   %ss       %s\n";
+"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %3u   %ss %d us      %s\n";
 
 const char report_bw_udp_format[] =
 "[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %5.3f ms  %d/%d (%.2g%%)  %s\n";
